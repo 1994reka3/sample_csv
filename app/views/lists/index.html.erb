@@ -1,0 +1,22 @@
+<h1>リスト一覧</h1>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>ゴール</th>
+    <th>内容</th>
+    <th>ジャンル</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td><%= list.id %></td>
+        <td><%= list.goal %></td>
+        <td><%= list.content %></td>
+        <td><%= list.genre %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
